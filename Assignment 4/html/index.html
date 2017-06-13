@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3.4 - Front End Web Development Fundamentals</title>
+	<style>
+  h1
+{
+  text-decoration: underline;
+}
+.divCenter
+{
+    margin: auto;
+    width: 20%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-image: url("../images/sunrise.jpg");
+    color: white;
+}
+.red
+{
+color: red;
+}
+input[type="submit"]
+{
+
+  background-color: Transparent;
+        border: none;
+        outline:none;
+        color: white;
+}
+</style>
+</head>
+<body>
+  <!--This webpage demonstrates the use of Form attributes -->
+<h1 align="center">
+  Sign up page for tutorial website!
+</h1>	
+<hr>
+<br>
+<!--The below div acts as a container for the form elements-->
+<div class="divCenter">
+<p>Please enter the following details:</p>
+  <form>
+    First name: <input type="text" name="usrfname"><br><br>
+    <!--Last Name field will be disabled-->
+    Last name: <input type="text" name="usrlname" disabled><br><br>
+    <!--User Name, Password and Email ID fields are required-->
+    Username: <span class="red"><sup>*</sup></span><input type="text" name="usrname" required /><br><br>
+    Password:<span class="red"><sup>*</sup></span> <input type="Password" name="usrpwd" required/><br><br>
+    EmailID:<span class="red"><sup>*</sup></span><input type="EmailID" name="usremailId" required/><br><br>
+    <!--Max number phone field is set to 10-->
+    Phone no: <input type="Phone" name="usrphoneno" maxlength="10" /><br><br>
+    <!--Date of birth field can be selected between 1st Jan 1900 and 14th Jun 2017-->
+    DOB:  <input type="date" name="bday" min="1900-01-01" max="2017-06-14"/><br><br>
+  <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
